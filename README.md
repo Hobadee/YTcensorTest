@@ -3,7 +3,7 @@ Checks for search result censorship on YouTube by running a search query and rep
 
 This is currently a very quick and dirty script to help Louder with Crowder.  This can be flushed out a fair bit.
 
-Todo:
+## Todo:
 
 - Take search parameter as argument
 - Store result items as objects, especially so that we can...
@@ -11,3 +11,17 @@ Todo:
 - Do more than 1 page of search.  (We currently get just 19 results.)
 
 Ideally we would set this up in some docker container or something and phone home with results, then spin up a bunch of containers globally and compare results
+
+# Running
+Before running, you need the following Python libraries:
+
+- requests
+- htmldom
+
+Install them using:
+
+``` pip3 install requests htmldom ```
+
+To run:
+
+``` python3 censorTest.py ```
